@@ -105,8 +105,51 @@
                     background-attachment: fixed;
                 }
             }
-            /* ---------------------------- */
+/*  Strategic impact*/
+/* Branding: Dark Blue Depth */
+:root {
+    --dark-navy: #0f172a;
+    --slate-blue: #1e293b;
+    --action-blue: #20beff;
+    --text-muted: #94a3b8;
+}
 
+#impact {
+    background-color: var(--slate-blue) !important;
+}
+
+/* Impact Section Icons */
+#impact .icon.major {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    background: rgba(32, 190, 255, 0.1);
+    color: var(--action-blue);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Glassmorphism Effect for Project Content */
+.spotlight .content {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(5px);
+    border-left: 2px solid var(--action-blue);
+}
+
+/* Metric Highlighting */
+strong {
+    color: var(--action-blue);
+    font-weight: 800;
+}
+
+/* Feature Grid Alignment */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}            
+            /* ---------------------------- */
             /* Contact Section Banner Background */
             #cta {
                 background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');
@@ -305,8 +348,54 @@
                     </ul>
                 </div>
             </section>
+<section id="impact" class="wrapper style2 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Strategic Impact</h2>
+            <p>Moving beyond charts: How my data solutions drive measurable business growth.</p>
+        </header>
+        <div class="features">
+            <section class="reveal">
+                <span class="icon solid fa-rocket major style1"></span>
+                <h3>Efficiency Gain</h3>
+                <p>Automated legacy reporting workflows, reducing manual data processing time by <strong>40%</strong> and increasing team productivity.</p>
+            </section>
+            <section class="reveal">
+                <span class="icon solid fa-bullseye major style2"></span>
+                <h3>Accuracy & Precision</h3>
+                <p>Cleaned and modeled datasets of 1M+ rows, improving forecasting accuracy by <strong>15%</strong> through advanced outlier detection.</p>
+            </section>
+            <section class="reveal">
+                <span class="icon solid fa-hand-holding-usd major style3"></span>
+                <h3>Revenue Insights</h3>
+                <p>Identified underperforming regional segments, leading to a <strong>10%</strong> optimization in marketing spend allocation.</p>
+            </section>
+        </div>
+    </div>
+</section>
 
-            <section id="cta" class="wrapper style4">
+<section id="two" class="wrapper alt style2">
+    <div class="portfolio-header">
+        <h2 style="font-size: 2.5rem; letter-spacing: 0.2em; margin-bottom: 0;">PROJECT SHOWCASE</h2>
+        <p style="color: #94a3b8;">End-to-end analytical implementations.</p>
+    </div>
+
+    <section class="spotlight reveal">
+        <div class="image"><img src="https://github.com/MuhammadHuzaifaGohar/huzaifatheanalyst/blob/main/images/Tableau.png?raw=true" alt="Tableau Dashboard" /></div>
+        <div class="content">
+            <h2>01. Executive Decision Hub</h2>
+            <p><strong>The Challenge:</strong> Stakeholders were overwhelmed by static Excel sheets that lacked real-time visibility.<br>
+               <strong>The Solution:</strong> Developed a Tableau-based visual command center with dynamic drill-downs.<br>
+               <strong>The Impact:</strong> Reduced C-suite meeting prep time from 4 hours to 10 minutes.</p>
+            <div class="project-actions">
+                <a href="#" class="button small primary">View Dashboard</a>
+                <a href="#" class="button small">Case Study</a>
+            </div>
+        </div>
+    </section>
+</section>
+            
+<section id="cta" class="wrapper style4">
                 <div class="inner">
                     <header>
                         <h2>Let's start your data transformation</h2>
